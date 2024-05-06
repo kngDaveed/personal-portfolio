@@ -474,10 +474,9 @@ span.trans{
         height: auto;
         padding: 10rem 2rem 5rem 2rem;
     }
-    /* .home {
-        flex-direction: column;
-        text-align: center;
-    } */
+    .home-img img{
+        width: 100%;
+    }
     .home-content h2{
         font-size: 2rem;
     }
