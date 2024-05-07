@@ -549,7 +549,6 @@ font-family: "Quicksand", sans-serif;
     }
     
   }
-
   @media (max-width: 400px){
     #menu-icon{
         display: block;
@@ -603,7 +602,7 @@ font-family: "Quicksand", sans-serif;
         padding: 10rem 2rem 5rem 2rem;
     }
     .home-img img{
-        width: 100%;
+        width: 80% !important;
     }
     .home-content h2{
         font-size: 2rem;
@@ -623,9 +622,10 @@ font-family: "Quicksand", sans-serif;
 }
      .about-img2{
     display: block;
+    text-align: center;
 }
     .about-img2 img{
-        width: 100%;
+        width: 80% !important;
         border-radius: 50%;
     }
     .about-content h2{
@@ -667,3 +667,5 @@ font-family: "Quicksand", sans-serif;
     }
     
   }
+
+ 
