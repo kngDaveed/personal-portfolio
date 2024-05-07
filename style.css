@@ -429,15 +429,6 @@ font-family: "Quicksand", sans-serif;
         font-size: 55%;
     }
   }
-  /* @media (max-width: 1991px){
-    .header{
-        padding: 2rem 3%;
-    }
-
-    section {
-        padding: 10rem 3% 2rem;
-    }
-  } */
 
 
 
@@ -457,6 +448,124 @@ font-family: "Quicksand", sans-serif;
 
 
   @media (max-width: 768px){
+    #menu-icon{
+        display: block;
+    }
+    .sub2 {
+        padding: 5rem 2rem;
+      }
+    article {
+        padding: 10rem 10px 2rem;
+        /* margin: 0 auto; */
+    }
+.wth-60{
+    width: 90%;
+}
+.wth-70{
+    width: 90%;
+}
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        height: 42vh;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+    @keyframes slideInRight {
+        from {
+          transform: translateX(200px);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+    .navbar.active{
+        display: block;
+      animation: slideInRight 0.5s;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 4rem 0 3rem 4rem;
+    }
+
+    .home {
+        height: auto;
+        padding: 10rem 2rem 5rem 2rem;
+    }
+    .home-img img{
+        width: 100%;
+    }
+    .home-content h2{
+        font-size: 2rem;
+    }
+    .home-content h1{
+        font-size: 3rem;
+    }
+    .home-content h3{
+        font-size: 1.5rem;
+    }
+    
+
+
+    /* about section */
+     .about-img{
+    display: none;
+}
+     .about-img2{
+    display: block;
+}
+    .about-img2 img{
+        width: 100%;
+        border-radius: 50%;
+    }
+    .about-content h2{
+        font-size: 2.6rem;
+    }
+    .about-content h1{
+        font-size: 3.5rem;
+        text-align: start;
+    }
+    .about-content h3{
+        font-size: 1.5rem;
+    }
+    .dp{
+        margin-top: 4rem;
+    }
+
+    .about{
+        padding: 5rem 2rem;
+    }
+
+    /* .about {
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 9rem;
+    } */
+    .about-img .dp{
+        margin: 0;
+    }
+    
+    .portfolio h2{
+        margin-bottom: 3rem;
+    }
+    .portfolio-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .portfolio{
+        padding-bottom: 9rem;
+    }
+    
+  }
+
+  @media (max-width: 400px){
     #menu-icon{
         display: block;
     }
