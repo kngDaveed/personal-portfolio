@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 *{
     margin: 0;
     padding: 0;
@@ -50,7 +51,16 @@ nav{
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
     transition: 1s ease; 
 }
-
+.wth-70{
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+.wth-60{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
 .logo {
     font-size: 2.5rem;
     font-weight: 600;
@@ -75,8 +85,7 @@ nav{
     display: none;
 }
 .home {
-    height: 100vh;
-    padding: 12rem 8rem 5rem 8rem;
+    padding: 12rem 8rem 8rem 8rem;
 }
 .home-img{
     text-align: center;
@@ -151,11 +160,12 @@ span.trans{
 .btn2 {
     display: inline-block;
     padding: 1rem 3rem;
-    background: var(--bg-color);
+    /* background: #f9c227; */
+    background: var(--main-color);
     border-radius: 4rem;
-    box-shadow:0 0 1rem var(--bg-color);
+    box-shadow:0 0 1rem var(--main-color);
     font-size: 1rem;
-    color: var(--main-color);
+    color: var(--bg-color);
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .1s ease;
@@ -168,7 +178,7 @@ span.trans{
     transform: translateY(-5px);
 }
 .btn2:hover{
-    box-shadow: 0 0 2rem var(--bg-color);
+    box-shadow: 0 0 3rem var(--main-color);
     background: var(--main-color);
     color: #1f242d;
 }
@@ -258,15 +268,6 @@ span.trans{
     right: 5%;
 }
 
-/* .service-icon{
-    position: absolute;
-    background: #782A45;
-    border: 10px solid #fff;
-    border-radius: 50px;
-    padding: 2rem;
-    bottom: -18%;
-    left: 10%;
-  } */
 .skills-box i{
     font-size: 4rem;
     color: var(--main-color);
@@ -279,6 +280,8 @@ span.trans{
     font-size: 1.6rem;
 }
 
+
+/* portfolio section */
 .portfolio {
     background: var(--second-bg-color);
 }
@@ -286,28 +289,24 @@ span.trans{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
-    gap: 2.5rem;
+    gap: 3rem;
 }
 .portfolio-container .portfolio-box{
     position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
+    border-radius: 1.3rem;
+    box-shadow: 0 0 2rem var(--bg-color);
     overflow: hidden;
     display: flex;
-    /* object-fit: cover; */
 }
 
 .portfolio-box img{
     width: 100%;
     height: 250px;
-    transition: .3s ease;
+    transition: all ease 2s;
 }
 
 .portfolio-box:hover img{
-    transform: scale(1.1);
-}
-#professional{
-    padding-bottom: 5rem;
+    transform: scale(0.98);
 }
 
 .portfolio-box .portfolio-layer{
@@ -316,36 +315,66 @@ span.trans{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    background: linear-gradient(rgba(146, 144, 144, 0.1), var(--bg-color));
+    backdrop-filter: blur(.4rem);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 4rem;
+    padding: 3rem 3rem;
+    /* display: none; */
     transform: translateY(100%);
-    transition: .3s ease;
+    transition: all ease .8s;
 }
 
 .portfolio-box:hover .portfolio-layer{
+    /* display: block; */
+    /* animation: slideUp 1s; */
     transform: translateY(0);
 }
 
+
+/* @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  } */
+
 .portfolio-layer h4{
-    font-size: 3rem;
-    color:var(--bg-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:#fff;
 }
 
 .portfolio-layer p{
-    font-size: 1.4rem;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight:500;
+    color: #fff;
 }
-.hold{
-    display: flex;
-    justify-content: center;
+
+
+
+/* conatct section */
+.dev-info h2{
+font-family: "Quicksand", sans-serif;
+color: #0ef;
 }
-.mail {
+.dev-info li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+font-family: "Quicksand", sans-serif;
+}
+
+.dev-info li:hover{
+    color: #0ef;
+}
+/* .mail {
     align-items: center;
     text-align: center;
     width: 3rem;
@@ -362,7 +391,7 @@ span.trans{
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
     transform: translateY(-10px);
-}
+} */
 
 .social-links i{
     display: inline-flex;
@@ -375,14 +404,14 @@ span.trans{
     border-radius: 50%;
     font-size: 1.5rem;
     color: var(--main-color);
-    margin: 2rem 1rem 3rem 0;
-    transition: .1s ease;
+    margin: .8rem 1rem 1rem 0;
+    transition: all ease .3s;
 }
 
 .social-links i:hover {
     background: var(--main-color);
     color: var(--second-bg-color);
-    box-shadow: 0 0 1rem var(--main-color);
+    box-shadow: 0 0 3rem var(--main-color);
     transform: translateY(-10px);
 }
   .social-links p {
@@ -438,7 +467,12 @@ span.trans{
         padding: 10rem 10px 2rem;
         /* margin: 0 auto; */
     }
-
+.wth-60{
+    width: 90%;
+}
+.wth-70{
+    width: 90%;
+}
     .navbar {
         position: absolute;
         top: 100%;
