@@ -15,14 +15,14 @@
       name="keywords"
       content="portfolio, portfolio website, professional website, personal website, frontend website, frontend web developer, frontend designer, frontend programmer, frontend, portfolio site, personal portfolio website"
     />
- 
+
     <!-- bootstrap link -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
-    />
+    /> -->
 
     <!-- fontawesome icon link -->
     <link
@@ -33,289 +33,211 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- css link -->
+    <!-- css links -->
     <link rel="stylesheet" href="style.css" />
-
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="mediaQueries.css" />
 
     <!-- logo icon on title -->
     <link rel="icon" href="images/fav-icon.png" type="image/svg" />
 
-    <title>Professional Portfolio Website By Godfrey Chimaobim .O David - Elevate your Digital Presence</title>
-
-
+    <title>
+      Professional Portfolio Website By Godfrey Chimaobim .O David - Elevate
+      your Digital Presence
+    </title>
   </head>
   <body>
-
-
     <!-- header section -->
     <header class="">
-      <section class="">
-        <nav class="">
-          
-          <h2 onclick="location.href='index.html'" class="mb-0 logo">
-            <span style="color: rgb(6, 243, 255)">Chima</span>Obim
-          </h2>
-  
-            <i class="bx bx-menu" id="menu-icon"></i>
-  
-          <div class="navbar">
+      <nav class="">
+        <h2 onclick="location.href='index.html'" class="logo">
+          <span style="color: rgb(6, 243, 255)">Chima</span>Obim
+        </h2>
 
-            <a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a>
-            
-            <a href="#about"><i class="fa-solid fa-user-tie"></i>  About</a>
+        <div class="mobileMenU">
+          <i class="fa-solid fa-list-ul" id="menu-icon"></i>
+        </div>
 
-            <a href="#skills"><i class="fa-solid fa-wrench"></i> skills</a>
+        <div class="navbar">
+          <a href="#about" class="active">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
 
-            <a href="#portfolio"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
+        <button class="hire">
+          Reach Out
+          <!-- <i class="fa-solid fa-download"></i> -->
+        </button>
+      </nav>
 
-            <a href="#contact"> <i class="fa-solid fa-address-book"></i> Contact</a>
-
+      <!-- home section -->
+      <section class="heroSection" id="about">
+        <div class="heroContent">
+          <div class="profile">
+            <div class="profileImg">
+              <img src="images/Profile.jpg" class="dp" alt="" />
+            </div>
+            <div class="profilebase">
+              <h4>Modern Development Tools</h4>
+              <p class="codeBase">
+                React.js, JavaScript, TypeScript, JQuery, CSS3, Tailwind CSS,
+                Bootstrap & HTML5.
+              </p>
+              <div class="profileSocials">
+                <span class="linkedin">
+                  <i class="fa-brands fa-linkedin"></i>
+                </span>
+                <span class="github">
+                  <i class="fa-brands fa-github"></i>
+                </span>
+                <span class="whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </span>
+                <span class="mail">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <span class="phone">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <!-- <span class="hireMeBtn">Download CV</span> -->
+              </div>
+            </div>
           </div>
-        </nav>
+
+          <div class="profileDetails">
+            <div class="profileContent">
+              <div class="heroDetails">
+                <p>Hello, I am</p>
+                <h1 class="identifier">Godfrey Chimaobim .O</h1>
+
+                <h2>A <span class="trans multiple-text"></span> </h2> <span>based in Lagos State, Nigeria</span>
+
+                <p>
+                  As a Frontend Developer with over 2 years of result-driven
+                  experience, I am passionate about crafting responsive
+                  user-centric web and mobile interfaces as well as building
+                  scalable web solutions.
+                </p>
+
+                <p>
+                  Being a Frontend Engineer, the primary focus relies heavily on
+                  creating visually appealing and user-friendly Interfaces. With
+                  a focus on implementing the visual and interactive elements
+                  into every project, thus ensuring that the user interface is
+                  engaging and intuitive.
+                </p>
+                <p>
+                  Discover how I can elevate your digital presence by building a
+                  high performance and well optimized service that significantly
+                  improves the user engagement for your Brand.
+                </p>
+              </div>
+              <div class="serviceAd">
+                <div class="adList">
+                  <img src="images/work1.jpg" alt="" class="design" />
+                  <div class="roles">
+                    <span class="HoverIcon">
+                      <i class="fa-solid fa-share-square"></i>
+                    </span>
+                    <p>Responsive interface Designs</p>
+                    <h4>Design</h4>
+                  </div>
+                </div>
+                <div class="adList">
+                  <img src="images/work6.jpg" alt="" class="Branding" />
+                  <div class="roles">
+                    <span class="hoverIcons">
+                      <i class="fa-solid fa-share-square"></i>
+                    </span>
+                    <p>Brand Identity & Hosting Solutions</p>
+                    <h4>Brand</h4>
+                  </div>
+                </div>
+                <div class="adList">
+                  <img src="images/work4.jpg" alt="" class="development" />
+                  <div class="roles">
+                    <span class="hoverIcons">
+                      <i class="fa-solid fa-share-square"></i>
+                    </span>
+                    <p>Website Development & Lots More</p>
+                    <h4>Development</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </header>
 
-    <!-- home section -->
-    <section class="home" id="home">
-      <div class="flex-wrap">
-        <div class="home-section">
-          <div class="col-md home-content">
-            <h4 class="fw-bold pb-2">Hello, I am</h4>
-    
-            <h1 class="identifier">Godfrey Chimaobim .O</h1>
-    
-            <h2 class="fw-bold pb-3">I am a <span class="trans multiple-text"></span></h2>
-    
-            <h4 class="fw-bold">
-              <!-- Who Designs and Develops responsive multi-divergent <br />
-              websites across all platforms. -->
-             Passionate about crafting engaging user experiences and building responsive web applications. 
-              <br><br> 
-              As a Developer who maintains a clean code method of development following the principles of DRY, advanced performance optimization, and responsive design. <br> <br>  Bringing creativity and technical proficiency to every project. <br> <br> Discover how I can elevate your digital presence and deliver a  seamless user interfaces to your Brand.
-            </h4>
-    
-            
-    
-            <div class="row align-items-center pt-5">
-              <div class="col social-media">
-                <a href="https://www.linkedin.com/in/chimaobim-godfrey-731093265"
-                  ><i class="bx bxl-linkedin"></i
-                ></a>
-                <a class="ms-4" href="https://github.com/dashboard"
-                  ><i class="bx bxl-github"></i
-                ></a>
-              </div>
-  
-              <div class="col">
-                <a href="#about" class="btn">Learn More</a>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col-md home-img">
-            <img src="images/xp.jpg" class="dp" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- about section design -->
-    <section class="about" id="about">
-      <div class="about-section">
-      <!-- <div class="row align-items-center gap-5"> -->
-        <div class="col-md about-img">
-          <img src="images/xp.jpg" class="" alt="Godfreys display Photo" />
-
-          <div class="row align-items-center pt-3">
-            <div class="col ms-auto social-media">
-              <a href="https://www.linkedin.com/in/chimaobim-godfrey-731093265"
-                ><i class="bx bxl-linkedin"></i
-              ></a>
-              <a class="ms-4" href="https://github.com/dashboard"
-                ><i class="bx bxl-github"></i
-              ></a>
-            </div>
-
-            <div class="col-4 me-auto">
-              <a href="#portfolio" class="btn">Learn More</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md about-content">
-          <h1 class="">
-            <i style="color: #0ef;" class="fa-brands fa-searchengin"></i> More About <span style="color: rgb(6, 243, 255)">Me</span>
-          </h1>
-  
-          <h3 class="pt-5 fw-bold" style="color: rgb(6, 243, 255)">
-            As a Certified Frontend Software Developer!
-          </h3>
-          <h5 class="pt-3 fw-bold">
-            I am eager to work and learn in a
-            technologically productive environment. To help build and design stunning solutions to real world problems, whilst further advancing my skills in the software development industry. <br /> <br>
-            As a developer I explore a collection of projects showcasing proficiency in utilization of HTML5, CSS3, DOM(document object model) manipulation, JavaScript, as well as popular frontend frameworks and libraries like React and Next.js
-          </h5>
-  
-          <h3 class="pt-5 fw-bold" style="color: rgb(6, 243, 255)">As a Product UI/UX Designer!</h3>
-          <h5 class="pt-3 pb-5 fw-bold">
-            Creating amazing user interfaces and applying my understanding of UX in ensuring a remarkable user experience across any project further sets me apart in software Development and integrated UI Design. <br><br>
-            Being knowledgeable in the field of design, not only ensures proper application of design principles, but further contributes to the overall outcome of prototypes into fully
-            functioning responsive websites. <br /><br>
-            I create dynamic user interfaces keeping in mind the User's
-            Experience at all times. Utilizing softwares like Figma and Adobe XD as my core design tools.
-          </h5>
-        </div>
-  
-        <div class="col-md about-img2">
-          <img src="images/xp.jpg" class="" alt="Godfreys display Photo" />
-        </div>
-      </div>
-    </section>
-
     <!-- service section -->
-    <section class="skills sub2" id="skills">
-      <h1 class="heading fw-bold pb-5">
-        Professional <span style="color: rgb(6, 243, 255)">Skills</span>
-      </h1>
+    <section id="services" class="services">
+      <div class="labelContext">
+        <h3 class="bgHeader">Services</h3>
+        <h4 class="mainHeader">Premium Services</h4>
+      </div>
 
-      <div class="skills-container row align-items-center gap-5">
-        <div class="col-md skills-box">
-          <div
-            id="carouselExampleAutoplaying"
-            class="carousel slide"
-            data-bs-ride="carousel"
-            data-interval="100"
-          >           
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="images/web06.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images/web04.png"
-                  class="d-block object-fit cover w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images/web03.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images/web02.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images/web05.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images/web01.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-          <p class="skill-icon">
-            <i class="bx bx-code-alt fa-beat"></i>
-          </p>
-          <div class="px-3">
-            <h3 style="color: #0ef;" class="fw-bold py-4">Web <span class="text-light">Development</span></h3>
-          <p class="fw-medium">
-            Technical skills, proficiency and utilization of HTML5, CSS3, JavaScript, popular frontend frameworks and libraries like React and Next.js in building and development of multi-divergent responsive web-interfaces.
-          </p>
-          </div>
-        </div>
-        <div class="col-md skills-box">
-          <div
-            id="carouselExampleAutoplaying"
-            class="carousel slide"
-            data-bs-ride="carousel"
-            data-interval="100"
-          >           
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="images/product1.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images/product2.png"
-                  class="d-block object-fit cover w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images/product3.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images/product4.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              
-            </div>
-          </div>
-          <p class="skill-icon">
-            <i class='bx bxl-graphql fa-beat'></i>
-          </p>
-          <div class="px-3">
-            <h3 style="color: #0ef;" class="fw-bold py-4"> Product <span class="text-light">UI/UX</span> Design</h3>
-          <p class="fw-medium">
-            Productive in Figma and Adobe XD Design environments. Utilizing
-            their Unique design features and incorporating their effects into UI
-            Wireframes, High-Fidelity Mock-ups, Detailed Style Guides and other comprehensive Projects.
+      <div class="serviceList">
+        <div class="serviceItem">
+          <h4>Improve Brand Identity</h4>
+          <p>
+            Looking to build a Website to improve your Brands Identity? Enhance or update pre-existing company websites? An E-commerce website for your Business? Look no further.
           </p>
         </div>
-          </div>
+        <div class="serviceItem">
+          <h4>Website Design and Development</h4>
+          <p>
+            I offer top-notch web development services, From concept to code, Utilizing modern technologies to transform your design vision into interactive, functional websites..
+          </p>
+        </div>
+        <div class="serviceItem">
+          <h4>Hosting Solutions</h4>
+          <p>
+            I offer hosting services designed to keep websites secured, Faster Uptime keeping site performance at its best always. Ensuring accessibility to your audience at all times.
+          </p>
+        </div>
+        <div class="serviceItem">
+          <h4>Collaborations & Project Management</h4>
+          <p>
+            Version control is essential in development, I use GitHub to manage code resources, track and review changes as well as collaboration tools like Trello, Slack and Zoom
+          </p>
+        </div>
+        <div class="serviceItem">
+          <h4>Interactive & Responsive Design Solutions</h4>
+          <p>
+            I can help enhance your website’s performance & overall functionality. Bring your website to life with custom web animations and interactive design elements.
+          </p>
+        </div>
+        <div class="serviceItem">
+          <h4>Want to stand out in the digital landscape?</h4>
+          <p>
+            Implementing best practices for better search visibility, improving your chances of ranking higher in search engine results, reaching more users, and driving business growth.
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- Portfolio section -->
-    <section class="portfolio sub2" id="portfolio">
+    <section class="portfolio" id="portfolio">
+      <div class="labelContext">
+        <h3 class="bgHeader">Portfolio</h3>
+        <h4 class="mainHeader">Projects</h4>
+        <p class="wth-60">
+          A compilation of professional projects, contracts, and project Collaborations between myself and other
+          Designers and Developers in the field.
+        </p>
+      </div>
 
-      <h1 id="professional" class="heading fw-bold pb-3">
-        Professional <span style="color: rgb(6, 243, 255)">Projects</span>
-      </h1>
-
-      <h4 class="fw-semibold wth-70 pb-5">The Projects below are a compilation of professional projects i have handled, collaborated in and contributed to. Contained within are mostly contracts given to me by registered bodies, corporate industries and major collaborations between myself and other professionals in the field. Spanning across various fields and industries, highlighting various dynamic styling, effects, features and functionalities</h4>
-
-      <div class="portfolio-container py-5">
-
+      <div class="portfolio-container">
         <div class="portfolio-box">
           <img src="images/sgin.png" alt="" />
           <div class="portfolio-layer">
             <h4>SGI: sgincorp</h4>
-            <p class="">
-              SGI: An International Export Exchange company with major subsidiaries and Partnerships, spanning across the UK, US and Singapore. 
+            <p>
+              SGI: An International Export Exchange company with major
+              subsidiaries and Partnerships, spanning across the UK, US and
+              Singapore.
             </p>
             <button
               class="btn2 mt-2"
@@ -330,9 +252,10 @@
           <img src="images/edubridge.png" alt="" />
           <div class="portfolio-layer">
             <h4>EduBridge Academy</h4>
-            <p class="">
-              EduBridge Academy is a career advisory, training and support academy. 
-              I spareheaded the User Interface Design as well development of their website.
+            <p>
+              EduBridge Academy is a career advisory, training and support
+              academy. I spareheaded the User Interface Design as well
+              development of their website.
             </p>
             <button
               class="btn2 mt-2"
@@ -347,8 +270,10 @@
           <img src="images/silvininvestments.png" alt="" />
           <div class="portfolio-layer">
             <h4>silvine Investments</h4>
-            <p class="">
-              This is an investment corporation and a subsidiary of SGI with affiliate partners in the UK and Singapore, this project was built during my internship with the Company SGI.
+            <p>
+              This is an investment corporation and a subsidiary of SGI with
+              affiliate partners in the UK and Singapore, this project was built
+              during my internship with the Company SGI.
             </p>
             <button
               class="btn2 mt-2"
@@ -363,8 +288,9 @@
           <img src="images/clem-excite.png" alt="" />
           <div class="portfolio-layer">
             <h4>Clemente charity</h4>
-            <p class="">
-              This is a charity foundation website which was a team Collaboration contract with Excite Africa 
+            <p>
+              This is a charity foundation website which was a team
+              Collaboration contract with Excite Africa
             </p>
             <button
               class="btn2 mt-2"
@@ -379,8 +305,9 @@
           <img src="images/ker-actv.png" alt="" />
           <div class="portfolio-layer">
             <h4>Ker-Active</h4>
-            <p class="">
-              A Personal Trainer and Gym instructor website I was contracted for by the client as a referral from a previously completed Job.
+            <p>
+              A Personal Trainer and Gym instructor website I was contracted for
+              by the client as a referral from a previously completed Job.
             </p>
             <button
               class="btn2 mt-2"
@@ -395,8 +322,9 @@
           <img src="images/advox.png" alt="" />
           <div class="portfolio-layer">
             <h4>AdvoxConsulting</h4>
-            <p class="">
-              An Advertising Firm and a subsidiary of SGI-Steveraton Group Incorporated. Advox covers everyting Publicity.
+            <p>
+              An Advertising Firm and a subsidiary of SGI-Steveraton Group
+              Incorporated. Advox covers everyting Publicity.
             </p>
             <button
               class="btn2 mt-2"
@@ -411,8 +339,9 @@
           <img src="images/brainiac.png" alt="" />
           <div class="portfolio-layer">
             <h4>BrainiacTech</h4>
-            <p class="">
-              An Software Firm and a subsidiary of SGI-Steveraton Group Incorporated. BrainiacTech covers everyting Software.
+            <p>
+              An Software Firm and a subsidiary of SGI-Steveraton Group
+              Incorporated. BrainiacTech covers everyting Software.
             </p>
             <button
               class="btn2 mt-2"
@@ -427,8 +356,10 @@
           <img src="images/g-glow.png" alt="" />
           <div class="portfolio-layer">
             <h4>G~GlowHairSupplies</h4>
-            <p class="">
-              G~GlowHairs is a Hair Product, accessories and hairpieces Retail outlet. With over 2+ years of presence here in Lagos state Nigeria. Check link for more info 
+            <p>
+              G~GlowHairs is a Hair Product, accessories and hairpieces Retail
+              outlet. With over 2+ years of presence here in Lagos state
+              Nigeria. Check link for more info
             </p>
             <button
               class="btn2 mt-2"
@@ -443,8 +374,10 @@
           <img src="images/teesgarage.png" alt="" />
           <div class="portfolio-layer">
             <h4>Tee's Garage</h4>
-            <p class="">
-              An Automechanic/Autorepair Service Website built for a Company here in Lagos with over 15+years of working presence and expertise. Check link for more info  
+            <p>
+              An Automechanic/Autorepair Service Website built for a Company
+              here in Lagos with over 15+years of working presence and
+              expertise. Check link for more info
             </p>
             <button
               class="btn2 mt-2"
@@ -459,8 +392,10 @@
           <img src="images/rooftop.png" alt="" />
           <div class="portfolio-layer">
             <h4>RoofTop Chambers</h4>
-            <p class="">
-              RTC is a law firm in the heart of Lagos State, Nigeria. They have solid alliances with top law firms in Nigeria and overseas. I got this contract as a referral from a previous Job.
+            <p>
+              RTC is a law firm in the heart of Lagos State, Nigeria. They have
+              solid alliances with top law firms in Nigeria and overseas. I got
+              this contract as a referral from a previous Job.
             </p>
             <button
               class="btn2 mt-2"
@@ -471,24 +406,15 @@
           </div>
         </div>
 
-      </div>
-
-      <h1 class="heading fw-bold pb-3 pt-5 mt-5 text-center">
-        Personal <span style="color: rgb(6, 243, 255)">Projects</span>
-      </h1>
-
-      <h4 class="fw-semibold wth-70 pb-5">The Projects below are a compilation of some private projects taken up over time these projects span across various fields and industries, highlighting various dynamic styling, effects, features and functionalities.</h4>
-
-
-      <div class="portfolio-container py-5">
-
         <div class="portfolio-box">
           <img src="images/ptf3.png" alt="" />
           <div class="portfolio-layer">
             <h4>Personal Portfolio</h4>
-            <p class="">
-              My Personal Portfolio website which holds a handfull of my professional and personal projects, a well detailed completely
-              responsive website with some amazing features and functionalities as well
+            <p>
+              My Personal Portfolio website which holds a handfull of my
+              professional and personal projects, a well detailed completely
+              responsive website with some amazing features and functionalities
+              as well
             </p>
             <button
               class="btn2 mt-2"
@@ -503,8 +429,9 @@
           <img src="images/ptf1.png" alt="" />
           <div class="portfolio-layer">
             <h4>Exclusive Stores</h4>
-            <p class="">
-              This is a dropshipping website which highlights some incredible features and stylings as well as functionalities.
+            <p>
+              This is a dropshipping website which highlights some incredible
+              features and stylings as well as functionalities.
             </p>
             <button
               class="btn2 mt-2"
@@ -514,201 +441,282 @@
             </button>
           </div>
         </div>
-
-        <div class="portfolio-box">
-          <img src="images/fitness.png" alt="" />
-          <div class="portfolio-layer">
-            <h4>Fitness Website</h4>
-            <p class="">
-              This is a fitness website i challenged myself to build and i completed the project in one day. Despite the time frame it is still an amazing project. 
-            </p>
-            <button
-              class="btn2 mt-2"
-              onclick="location.href='https://personal-fitness-website.vercel.app/'"
-            >
-              view website
-            </button>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/express-stores.png" alt="" />
-          <div class="portfolio-layer">
-            <h4>Express Stores</h4>
-            <p class="">
-              Express Stores is a drop shipping and retail website, it shows necessary sections but can as well be further developed with the inclusion and integration of features and functionalities. 
-            </p>
-            <button
-              class="btn2 mt-2"
-              onclick="location.href='https://express-stores.vercel.app/'"
-            >
-              view website
-            </button>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/medbay.png" alt="" />
-          <div class="portfolio-layer">
-            <h4>Medbay Medicals</h4>
-            <p class="">
-              A professional medical practitioners website designed to present services and features of a medical establishment.
-            </p>
-            <button
-              class="btn2 mt-2"
-              onclick="location.href='https://medbay-medicals.vercel.app/'"
-            >
-              view website
-            </button>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/graphics.png" alt="" />
-          <div class="portfolio-layer">
-            <h4>GraphiX Bay</h4>
-            <p class="">
-              A professional graphics design website designed to present services and features of a design institute or establishment.
-            </p>
-            <button
-              class="btn2 mt-2"
-              onclick="location.href='https://grahix-bay.vercel.app/'"
-            >
-              view website
-            </button>
-          </div>
-        </div>
-
       </div>
-    
+    </section>
+
+    <!-- skills section -->
+    <section class="skills" id="skills">
+      <div class="labelContext">
+        <h3 class="bgHeader">Skills</h3>
+        <h4 class="mainHeader">Skills and Experience</h4>
+      </div>
+
+      <div class="skillList">
+        <div class="skillItem">
+          <h4>Javascript and TypeScript 
+            <i class="fa-brands fa-js"></i>
+          </h4>
+          <div class="line">
+            <span data-width="80%"></span>
+          </div>
+        </div>
+        <div class="skillItem">
+          <h4>React.js and Next.js
+            <i class="fa-brands fa-react"></i>
+          </h4>
+          <div class="line">
+            <span data-width="75%"></span>
+          </div>
+        </div>
+        <div class="skillItem">
+          <h4>JQuery <img class="jquery" src="images/jquery.png"></img></h4>
+          <div class="line">
+            <span data-width="90%"></span>
+          </div>
+        </div>
+        <div class="skillItem">
+          <h4>Tailwind and Bootstrap CSS
+            <i class="fa-brands fa-bootstrap"></i>
+          </h4>
+          <div class="line">
+            <span data-width="90%"></span>
+          </div>
+        </div>
+        <div class="skillItem">
+          <h4>HTML5 and CSS3 <span><i class="fa-brands fa-html5"></i><i style="margin-left: 0.2rem;" class="fa-brands fa-css3"></i></span>
+          </h4>
+          <div class="line">
+             <span data-width="96%"></span>
+          </div>
+        </div>
+        <div class="skillItem">
+          <h4>Git and GitHub  <i style="margin-left: 0.5rem;" class="fa-brands fa-github"></i>
+          </h4>
+          <div class="line">
+            <span data-width="90%"></span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="servicesDetails">
+        <div class="exp">
+          <h4 class="abTitle">Experience</h4>
+          <div class="expContent">
+            <p>Oct - January 2023</p>
+            <h4>Steveraton Group Incorporated</h4>
+            <p>Frontend Developer</p>
+          </div>
+          <div class="expContent">
+            <p>April - July 2023</p>
+            <h4>Wild Fusion Digital Center</h4>
+            <p>Frontend Developer Intern</p>
+          </div>
+          <div class="expContent">
+            <p>2024 - Present</p>
+            <h4>Freelance Services</h4>
+          </div>
+        </div>
+        <div class="exp">
+          <h4 class="abTitle">Achievements</h4>
+          <div class="expContent">
+            <h4>Over 2years of Experience</h4>
+            <p>Experience with Design mockups, Web Development and Hosting Services</p>
+          </div>
+          <div class="expContent">
+            <h4>Over 20 Total Projects</h4>
+            <p>
+              For Companies, Brands, Businesses and other professional Client
+              Portfolios
+            </p>
+          </div>
+          <div class="expContent">
+            <h4>Positive Feedback & Referrals</h4>
+            <p>Good customer reviews, Credits, Design compliments as well as project Referrals</p>
+          </div>
+        </div>
+        <div class="exp">
+          <h4 class="abTitle">Certifications</h4>
+          <div class="expContent">
+            <h4>Wild Fusion Digital Center</h4>
+            <p>Frontend Web Development Certification</p>
+          </div>
+          <div class="expContent">
+            <p>2017 - 2021</p>
+            <h4>Federal Polytechnic Nekede Owerri</h4>
+            <p>Higher National Diploma : Civil Engineering</p>
+          </div>
+          <div class="expContent">
+            <h4>Udemy : Product Design</h4>
+            <p>
+              User Interface & User Experience Design Essentials : Figma and Adobe XD <br>
+              Credentials By Daniel Walter Scott
+            </p>
+          </div>
+        </div>
+        
+      </div>
     </section>
 
     <!-- contact section design -->
-    <section class="contact sub2" id="contact">
+    <section class="contact" id="contact">
+      <div>
+        <div class="labelContext">
+          <h3 class="bgHeader">Contact Me</h3>
+          <h4 class="mainHeader">Lets Work Together</h4>
+          <p class="wth-60">
+            Employment Oppurtunities, Experience Hire, Project Consultation,
+            Contracts Deals and Effective Job Colaborations, Feel free to
+            contact me anytime!
+          </p>
+        </div>
 
-      <div class="flex-wrap">
-
-           <h1 class="heading fw-bold pb-3">
-            Cont<span style="color:#0ef;" class="">act</span> 
-            <!-- <span style="color: rgb(6, 243, 255)">Me</span> -->
-          </h1>
-          
-          <div class="text-center">
-            <h4 class="fw-bold wth-60">
-              For an Employment Oppurtunity, Quotes, Clarifications, Contracts or Colaborations, Feel Free to contact me via my social handles below or by simply sending an Email across.
-            </h4>
-          </div>
-
-
-        <div class="dev-info">
-
-          <div class="col-md">
-            <h2 class="fw-bold pb-4">
-              Quote
-            </h2>
-            
-            <h4 class="">
-              "Time is a created thing. To say <span class="fw-bold">'I don't have time,'</span> is like saying, <span class="fw-bold">'I don't want to.'</span> "  <span style="color: #0ef;" class="fw-bold"> - by Lao Tzu</span>
-              <br> <br>
-              This quote encapsulates the idea that time is a construct, and it's up to us individuals and how we choose to utilize it. 
-              <br><br> 
-              For a software developer, it serves as a reminder of the importance of managing time efficiently, prioritizing tasks effectively, and the complexities often encountered in software development."
-
-            </h4>
-
-          </div>
-
-          <div class="col-md-2">
-            <h2 class="fw-bold pb-4">
-              Quick Links
-            </h2>
-            
-            <ul class="p-0">
-              <li onclick="location.href='#home'" class="pb-4">Home</li>
-              <li onclick="location.href='#about'" class="pb-4">About</li>
-              <li onclick="location.href='#skills'" class="pb-4">Skills</li>
-              <li onclick="location.href='#portfolio'" class="">Portfolio</li>
-            </ul>
-          </div>
-
-          <div class="col-md-3">
-            <h2 class="fw-bold pb-4">
-              Developers Info
-            </h2>
-
+        <div class="div contactDetails">
+          <aside class="officeInfo">
+            <div class="address">
+              <span>
+                <i class="fa-solid fa-location"></i>
+              </span>
+              <div class="contentDtls">
+                <h4>Current Location</h4>
+                <p>Lagos State, Nigeria</p>
+              </div>
+            </div>
+            <div class="contactInfo">
+              <span>
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <div class="contentDtls">
+                <h4>Contact Information</h4>
+                <p>+234 9162 529 733</p>
+              </div>
+            </div>
+            <div class="mailing">
+              <span>
+                <i class="fa-solid fa-envelope-circle-check"></i>
+              </span>
+              <div class="contentDtls">
+                <h4>Send an Email</h4>
+                <p>davidgodfrey365@gmail.com</p>
+              </div>
+            </div>
             <div class="social-links">
-              <a class="text-decoration-none" href="https://www.linkedin.com/in/chimaobim-godfrey-731093265"
-                ><i class="bx bxl-linkedin"></i>
+              <a
+                class="linkedin"
+                href="https://www.linkedin.com/in/chimaobim-godfrey-731093265"
+                ><i class="fa-brands fa-linkedin"></i>
               </a>
-
-              <a class="text-decoration-none" href="mailto:davidgodfrey365@gmail.com">
+              <a class="mail address" href="mailto:davidgodfrey365@gmail.com">
                 <i class="fa-solid fa-envelope"></i>
               </a>
-
-              <a class="text-decoration-none" href="https://github.com/kngDaveed">
-                <i class="bx bxl-github"></i>
+              <a class="github" href="https://github.com/kngDaveed">
+                <i class="fa-brands fa-github"></i>
               </a>
-
-              <br> 
-
-              <a class="text-decoration-none"
-                href="tel:09162529733">
+              <a class="whatsapp" href="tel:09162529733">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
-
-              <a class="text-decoration-none"
-                href="https://instagram.com/iam_davidgodfrey?igshid=MmIzYWVlNDQ5Yg==">
-                <i class="bx bxl-instagram"></i>
+              <a class="phoneIcon" href="tel:09162529733">
+                <i class="fa-solid fa-phone"></i>
               </a>
-
-              <a class="text-decoration-none"
-                href="https://www.facebook.com/profile.php?id=100014673094112&mibextid=2JQ9oc">
-                <i class="bx bxl-facebook"></i>
-              </a>
-              
-
-              
             </div>
+          </aside>
+          <div class="contactForm">
+            <form action="https://formspree.io/f/mnnaeegd" method="POST">
+              <div class="input-grid">
+                <div class="input-grp">
+                  <label for="name" class="placeholder"
+                    ><i class="fa-solid fa-user-tie"></i> First Name</label
+                  >
+                  <input
+                    class="input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
 
-            <li class="pt-4">Lagos State, Nigeria</li>
+                <div class="input-grp">
+                  <label for="last-name" class="placeholder"
+                    ><i class="fa-solid fa-user-tie"></i> Last Name</label
+                  >
+                  <input
+                    class="input"
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="input-grid">
+                <div class="input-grp">
+                  <label for="email" class="placeholder"
+                    ><i class="fa-solid fa-envelope-open-text"></i> Email
+                    Address</label
+                  >
+                  <input
+                    class="input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div class="input-grp">
+                  <label for="subject" class="placeholder"
+                    ><i class="fa-brands fa-envira"></i> Subject Topic</label
+                  >
+                  <input
+                    class="input"
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="input-grp">
+                <label for="message" class="placeholder"
+                  ><i class="fa-solid fa-envelope-circle-check"></i> Your
+                  Message</label
+                >
+                <textarea
+                  class="subject"
+                  name="message"
+                  id="message"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submitBtn">
+                Send Message <i class="fa-solid fa-paper-plane ms-1"></i>
+              </button>
+            </form>
           </div>
         </div>
 
-        <div class="text-center pt-5">
-          <h5 class="fw-bold mb-0">
-            Copyright © 2022, All rights reserved by Godfrey .C .O David
-          </h5>
+        <div class="copyright">
+          <h4>
+            Copyright &copy; 2022-2024
+            <span onclick="location.href='https://Briensturm.vercel.app'"
+              >Briensturm</span
+            >. All Rights Reserved
+          </h4>
         </div>
       </div>
-      <!-- <aside class="central">
-        <div class="hold">
-          <h2>davidgodfrey365@gmail.com</h2>
-        </div>
-        <div class="hold pt-10">
-          <h2>+234 8149944927</h2>
-          <i class="bx bxs-phone-call ml-5 pt-2 mail"></i>
-        </div>
-        <div class="hold pt-10">
-          <h2>Lagos, Nigeria</h2>
-        </div>
-
-        
-      </aside> -->
     </section>
 
-
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
 
     <!-- bootstrap javascript link -->
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"
-  ></script>
-
-
-  
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

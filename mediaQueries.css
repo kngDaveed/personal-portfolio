@@ -1,0 +1,116 @@
+@media (max-width: 1080px) {
+  section, .section{
+    padding: 5rem 2rem;
+  }
+  nav{
+    padding: 2rem;
+  }
+  #menu-icon {
+    display: block;
+  }
+  button.hire{
+    display: none;
+  }
+  .wth-60 {
+    width: 100%;
+  }
+  .wth-70 {
+    width: 100%;
+  }
+  .navbar {
+    position: absolute;
+    top: 8rem;
+    right: -100rem;
+    width: 75%;
+    height: max-content;
+    padding: 2rem;
+    background: var(--bg-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0 0 0 2rem;
+  }
+  .navbar.active {
+    right: 0;
+  }
+  .navbar.active a.active{
+    background-color: var(--second-bg-color);
+  }
+  .navbar a {
+    width: 100%;
+    border-radius: 0.5rem;
+    padding-inline: 2.5rem;
+    font-size: 2rem;
+    font-family: 'Quicksand', 'Poppins', Arial;
+  }
+  .heroSection {
+    padding: 12rem 2rem 5rem;
+}
+.heroContent {
+  grid-template-columns: repeat(1, 1fr) !important;
+}
+.profileDetails {
+  grid-column: 1;
+}
+.identifier {
+  font-size: 2.5rem;
+}
+.heroDetails{
+  padding: 1rem;
+}
+.serviceAd {
+  padding: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+.serviceList {
+  padding-top: 5rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+.servicesDetails {
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 5rem;
+}
+.skillList {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+section.skills {
+  padding: 5rem 2rem;
+}
+  .portfolio-container {
+    grid-template-columns: repeat(1, 1fr);
+  } 
+  .portfolio-box img {
+    height: 20rem;
+  }
+  .contactDetails {
+    padding: 0;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+.officeInfo {
+  border: none;
+  padding: 2rem;
+}
+a.phoneIcon{
+  display: none;
+}
+.contactForm{
+  grid-column: 1;
+  padding: 2rem;
+  border: none;
+}
+.input-grid {
+  grid-template-columns: repeat(1, 1fr);
+}
+.bgHeader{
+  font-size: 4rem;
+}
+.mainHeader{
+  font-size: 2.5rem;
+}
+
+}
