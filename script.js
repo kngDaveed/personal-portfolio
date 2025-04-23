@@ -49,3 +49,32 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+
+
+/*=======Swiper.js text==========*/ 
+const recentProject = new Swiper(".recentProject.mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    centeredSlides: false,
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    speed: 3000,
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+  });
