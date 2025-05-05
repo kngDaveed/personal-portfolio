@@ -277,8 +277,9 @@ span.trans {
   transition: all ease-in-out 0.3s;
 }
 .roleItems img{
-  width: 2rem;
+  width: 2.4rem;
   aspect-ratio: 1;
+  border-radius: 50%;
 }
 .roleItems:hover{
   transform: translate(-0.8rem);
