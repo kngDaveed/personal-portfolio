@@ -1,4 +1,4 @@
-@media (max-width: 1080px) {
+@media (max-width: 1024px) {
   section, .section{
     padding: 5rem 2rem;
   }
@@ -8,7 +8,7 @@
   #menu-icon {
     display: block;
   }
-  button.hire{
+  button.hire.webmain{
     display: none;
   }
   .wth-60 {
@@ -19,10 +19,10 @@
   }
   .navbar {
     position: absolute;
-    top: 8rem;
+    top: 6.94rem;
     right: -100rem;
-    width: 75%;
-    height: max-content;
+    width: 85%;
+    height: 100vh;
     padding: 2rem;
     background: var(--bg-color);
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
@@ -30,8 +30,17 @@
     transition: all 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
+    justify-content: start;
     align-items: flex-start;
-    border-radius: 0 0 0 2rem;
+    border-radius: 0;
+  }
+  button.hire{
+    width: 100%;
+    justify-content: center;
+  }
+  .navExtra{
+    display: flex;
+    width: 100%;
   }
   .navbar.active {
     right: 0;
@@ -47,23 +56,30 @@
     font-family: 'Quicksand', 'Poppins', Arial;
   }
   .heroSection {
-    padding: 12rem 2rem 5rem;
+    padding: 10rem 2rem 5rem;
 }
 .heroContent {
-  grid-template-columns: repeat(1, 1fr) !important;
+  display: flex;
+  flex-direction: column;
 }
 .profileDetails {
-  grid-column: 1;
+  grid-column: unset;
+width: 100%;
 }
+.profile{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ width: 100%;
+}
+.profileImg {
+  height: 40rem;
+}
+
 .identifier {
   font-size: 2.5rem;
 }
 .heroDetails{
   padding: 1rem;
-}
-.serviceAd {
-  padding: 1rem;
-  grid-template-columns: repeat(1, 1fr);
 }
 .serviceList {
   padding-top: 5rem;
@@ -113,4 +129,24 @@ a.phoneIcon{
   font-size: 2.5rem;
 }
 
+}
+
+@media (max-width: 500px) {
+  .profile{
+    display: flex;
+    flex-direction: column;
+   }
+   .heroDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .recentProjectgrid {
+    padding: 1rem;
+  }
+  .roleItems{
+    /* width: max-content; */
+    padding-inline: 2rem;
+    gap: 1.5rem;
+  }
 }

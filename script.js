@@ -30,6 +30,19 @@ window.onscroll = () => {
     menuIcon.classList.remove('fa-xmark');
     navbar.classList.remove('active');
 };
+/*
+window.onscroll = () => {
+  // close active navbar menu onScroll "Mobile"
+  menu.classList.remove("fa-xmark");
+  navMenu.classList.remove("active");
+  navMobBg.classList.remove("active");
+
+
+  // remove active dropdown list
+  ddBtn.classList.remove("showMenu");
+  ddContent.classList.remove("active");
+};
+*/
 
 
 const progressBar = document.querySelectorAll(".line span");
@@ -59,7 +72,7 @@ const recentProject = new Swiper(".recentProject.mySwiper", {
     loop: true,
     centeredSlides: false,
     autoplay: {
-      delay: 6000,
+      delay: 4000,
       disableOnInteraction: false,
     },
     speed: 3000,
@@ -74,7 +87,7 @@ const recentProject = new Swiper(".recentProject.mySwiper", {
       },
       1024: {
         slidesPerView: 3,
-        spaceBetween: 20,
+        spaceBetween: 12,
       },
     },
   });
