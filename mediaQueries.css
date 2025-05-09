@@ -83,21 +83,21 @@ width: 100%;
 }
 .serviceList {
   padding-top: 5rem;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 .servicesDetails {
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 5rem;
 }
 .skillList {
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 section.skills {
   padding: 5rem 2rem;
 }
   .portfolio-container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   } 
   .portfolio-box img {
     height: 20rem;
@@ -128,15 +128,52 @@ a.phoneIcon{
 .mainHeader{
   font-size: 2.5rem;
 }
+.faqContainer{
+  display: flex;
+  flex-direction: column;
+}
+.faqConnect{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  max-width: 100%;
+  }
 
 }
 
+
+
+@media (max-width: 768px) {
+
+.servicesDetails {
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 5rem;
+}
+.faqContainer{
+  display: flex;
+  flex-direction: column;
+}
+.faqConnect{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 100%;
+  }
+  .uiVideo{
+   width: 100%;
+    height: 24rem;
+    max-width: 100%;
+  }
+}
 @media (max-width: 500px) {
+  section, .section{
+    padding: 5rem 1.5rem;
+  }
   .profile{
     display: flex;
     flex-direction: column;
-   }
-   .heroDetails{
+  }
+  .heroDetails{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -144,9 +181,31 @@ a.phoneIcon{
   .recentProjectgrid {
     padding: 1rem;
   }
+  .portfolio-container {
+    grid-template-columns: repeat(1, 1fr);
+  } 
   .roleItems{
-    /* width: max-content; */
     padding-inline: 2rem;
     gap: 1.5rem;
+  }
+  .skillList {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .serviceList {
+    padding-top: 5rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+  .faqConnect{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 100%;
+    }
+    .faqhd {
+      line-height: 1.2;
+  }
+  .choice-accordion li label{
+    font-size: 1.5rem;
   }
 }

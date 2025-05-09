@@ -52,11 +52,9 @@ progressBar.forEach((span) => {
 });
 
 
-
-
 /*=======typed.js text==========*/ 
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'UI/UX Designer'],
+    strings: ['Frontend Developer', 'Software Engineer', 'Web Enthusiast', 'UI/UX Designer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
