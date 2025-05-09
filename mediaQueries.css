@@ -178,6 +178,9 @@ a.phoneIcon{
     flex-direction: column;
     gap: 1.5rem;
   }
+  .profileContent {
+    flex-direction: column-reverse;
+}
   .recentProjectgrid {
     padding: 1rem;
   }
