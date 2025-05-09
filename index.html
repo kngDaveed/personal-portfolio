@@ -57,9 +57,9 @@
 
         <div class="navbar">
           <a href="#about" class="active">About</a>
-          <a href="#services">Services</a>
           <a href="#portfolio">Portfolio</a>
           <a href="#skills">Skills</a>
+          <a href="#services">Services</a>
           <a href="#contact">Contact</a>
           <div class="navExtra">
             <a href="images/Frontend-Resume-Godfrey.pdf" class="hire" download>
@@ -121,6 +121,7 @@
               <p class="codeBase">
                 <span class="stack">React.js</span>
                 <span class="stack">Next.js</span>
+                <!-- <span class="stack">Typescript</span> -->
                 <span class="stack">Vanilla.js</span>
                 <span class="stack">SEO</span>
                 <span class="stack">HTML5 & CSS3</span>
@@ -222,6 +223,7 @@
                     </li>
                   </ul>
                 </div>
+
                 <!-- <li class="roleItems">
                     Discover how I can elevate your digital presence &
                   significantly improve the user engagement for your Brand. 
@@ -237,7 +239,7 @@
                   <div class="swiper-wrapper">
                     <div class="prjCard swiper-slide">
                       <div class="prjImgBx">
-                        <div class="linkIcon">
+                        <div onclick="location.href='https://globalfreedom.vercel.app'" class="linkIcon">
                           <span class="live">
                             <i class="fa-solid fa-link"></i>
                             live Preview
@@ -252,7 +254,7 @@
                     </div>
                     <div class="prjCard swiper-slide">
                       <div class="prjImgBx">
-                        <div class="linkIcon">
+                        <div onclick="location.href='https://appliancesrepairnearme.ca'" class="linkIcon">
                           <span class="live">
                             <i class="fa-solid fa-link"></i>
                             live Preview
@@ -264,7 +266,7 @@
 
                     <div class="prjCard swiper-slide">
                       <div class="prjImgBx">
-                        <div class="linkIcon">
+                        <div onclick="location.href='https://mercuryexp.vercel.app'" class="linkIcon">
                           <span class="live">
                             <i class="fa-solid fa-link"></i>
                             live Preview
@@ -275,7 +277,7 @@
                     </div>
                     <div class="prjCard swiper-slide">
                       <div class="prjImgBx">
-                        <div class="linkIcon">
+                        <div onclick="location.href='https://sgincorp.com'" class="linkIcon">
                           <span class="live">
                             <i class="fa-solid fa-link"></i>
                             live Preview
@@ -286,7 +288,7 @@
                     </div>
                     <div class="prjCard swiper-slide">
                       <div class="prjImgBx">
-                        <div class="linkIcon">
+                        <div onclick="location.href='https://teesgarage.vercel.app'" class="linkIcon">
                           <span class="live">
                             <i class="fa-solid fa-link"></i>
                             live Preview
@@ -297,7 +299,7 @@
                     </div>
                     <div class="prjCard swiper-slide">
                       <div class="prjImgBx">
-                        <div class="linkIcon">
+                        <div onclick="location.href='https://www.edubridgeacademy.com'" class="linkIcon">
                           <span class="live">
                             <i class="fa-solid fa-link"></i>
                             live Preview
@@ -315,64 +317,7 @@
       </section>
     </header>
 
-    <!-- service section -->
-    <section id="services" class="services">
-      <div class="labelContext">
-        <h3 class="bgHeader">Services</h3>
-        <h4 class="mainHeader">Premium Services</h4>
-      </div>
-
-      <div class="serviceList">
-        <div id="branding" class="serviceItem">
-          <h4>Improve Brand Identity</h4>
-          <p>
-            Looking to build a Website to improve your Brands Identity? Enhance
-            or update pre-existing company websites? An E-commerce website for
-            your Business? Look no further.
-          </p>
-        </div>
-        <div id="development" class="serviceItem">
-          <h4>Website Design and Development</h4>
-          <p>
-            I offer top-notch web development services, From concept to code,
-            Utilizing modern technologies to transform your design vision into
-            interactive, functional websites..
-          </p>
-        </div>
-        <div id="design" class="serviceItem">
-          <h4>Hosting Solutions</h4>
-          <p>
-            I offer hosting services designed to keep websites secured, Faster
-            Uptime keeping site performance at its best always. Ensuring
-            accessibility to your audience at all times.
-          </p>
-        </div>
-        <div class="serviceItem">
-          <h4>Collaborations & Project Management</h4>
-          <p>
-            Version control is essential in development, I use GitHub to manage
-            code resources, track and review changes as well as collaboration
-            tools like Trello, Slack and Zoom
-          </p>
-        </div>
-        <div class="serviceItem">
-          <h4>Interactive & Responsive Design Solutions</h4>
-          <p>
-            I can help enhance your website’s performance & overall
-            functionality. Bring your website to life with custom web animations
-            and interactive design elements.
-          </p>
-        </div>
-        <div class="serviceItem">
-          <h4>Want to stand out in the digital landscape?</h4>
-          <p>
-            Implementing best practices for better search visibility, improving
-            your chances of ranking higher in search engine results, reaching
-            more users, and driving business growth.
-          </p>
-        </div>
-      </div>
-    </section>
+    
 
     <!-- Portfolio section -->
     <section class="portfolio" id="portfolio">
@@ -771,6 +716,67 @@
         </div>
       </div>
     </section>
+
+    <!-- service section -->
+    <section id="services" class="services">
+      <div class="labelContext">
+        <h3 class="bgHeader">Services</h3>
+        <h4 class="mainHeader">Premium Services</h4>
+      </div>
+
+      <div class="serviceList">
+        <div id="branding" class="serviceItem">
+          <h4>Improve Brand Identity</h4>
+          <p>
+            Looking to build a Website to improve your Brands Identity? Enhance
+            or update pre-existing company websites? An E-commerce website for
+            your Business? Look no further.
+          </p>
+        </div>
+        <div id="development" class="serviceItem">
+          <h4>Website Design and Development</h4>
+          <p>
+            I offer top-notch web development services, From concept to code,
+            Utilizing modern technologies to transform your design vision into
+            interactive, functional websites..
+          </p>
+        </div>
+        <div id="design" class="serviceItem">
+          <h4>Hosting Solutions</h4>
+          <p>
+            I offer hosting services designed to keep websites secured, Faster
+            Uptime keeping site performance at its best always. Ensuring
+            accessibility to your audience at all times.
+          </p>
+        </div>
+        <div class="serviceItem">
+          <h4>Collaborations & Project Management</h4>
+          <p>
+            Version control is essential in development, I use GitHub to manage
+            code resources, track and review changes as well as collaboration
+            tools like Trello, Slack and Zoom
+          </p>
+        </div>
+        <div class="serviceItem">
+          <h4>Interactive & Responsive Design Solutions</h4>
+          <p>
+            I can help enhance your website’s performance & overall
+            functionality. Bring your website to life with custom web animations
+            and interactive design elements.
+          </p>
+        </div>
+        <div class="serviceItem">
+          <h4>Want to stand out in the digital landscape?</h4>
+          <p>
+            Implementing best practices for better search visibility, improving
+            your chances of ranking higher in search engine results, reaching
+            more users, and driving business growth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
 
     <!-- contact section design -->
     <section class="contact" id="contact">
