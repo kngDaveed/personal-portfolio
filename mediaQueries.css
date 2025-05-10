@@ -1,14 +1,15 @@
 @media (max-width: 1024px) {
-  section, .section{
+  section,
+  .section {
     padding: 5rem 2rem;
   }
-  nav{
+  nav {
     padding: 2rem;
   }
   #menu-icon {
     display: block;
   }
-  button.hire.webmain{
+  button.hire.webmain {
     display: none;
   }
   .wth-60 {
@@ -34,18 +35,18 @@
     align-items: flex-start;
     border-radius: 0;
   }
-  button.hire{
+  button.hire {
     width: 100%;
     justify-content: center;
   }
-  .navExtra{
+  .navExtra {
     display: flex;
     width: 100%;
   }
   .navbar.active {
     right: 0;
   }
-  .navbar.active a.active{
+  .navbar.active a.active {
     background-color: var(--second-bg-color);
   }
   .navbar a {
@@ -53,52 +54,46 @@
     border-radius: 0.5rem;
     padding-inline: 2.5rem;
     font-size: 2rem;
-    font-family: 'Quicksand', 'Poppins', Arial;
+    font-family: "Quicksand", "Poppins", Arial;
   }
   .heroSection {
-    padding: 10rem 2rem 5rem;
-}
-.heroContent {
-  display: flex;
-  flex-direction: column;
-}
-.profileDetails {
-  grid-column: unset;
-width: 100%;
-}
-.profile{
- display: grid;
- grid-template-columns: repeat(2,1fr);
- width: 100%;
-}
-.profileImg {
-  height: 40rem;
-}
+    padding: 5rem 2rem 5rem;
+  }
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .profileDetails {
+    grid-column: unset;
+    width: 100%;
+  }
+  .profile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
 
-.identifier {
-  font-size: 2.5rem;
-}
-.heroDetails{
-  padding: 1rem;
-}
-.serviceList {
-  padding-top: 5rem;
-  grid-template-columns: repeat(2, 1fr);
-}
-.servicesDetails {
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 5rem;
-}
-.skillList {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-section.skills {
-  padding: 5rem 2rem;
-}
+  .heroDetails {
+    padding: 1rem;
+  }
+  .serviceList {
+    padding-top: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .servicesDetails {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5rem;
+  }
+  .skillList {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  section.skills {
+    padding: 5rem 2rem;
+  }
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
-  } 
+  }
   .portfolio-box img {
     height: 20rem;
   }
@@ -106,88 +101,137 @@ section.skills {
     padding: 0;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-}
-.officeInfo {
-  border: none;
-  padding: 2rem;
-}
-a.phoneIcon{
-  display: none;
-}
-.contactForm{
-  grid-column: 1;
-  padding: 2rem;
-  border: none;
-}
-.input-grid {
-  grid-template-columns: repeat(1, 1fr);
-}
-.bgHeader{
-  font-size: 4rem;
-}
-.mainHeader{
-  font-size: 2.5rem;
-}
-.faqContainer{
-  display: flex;
-  flex-direction: column;
-}
-.faqConnect{
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  max-width: 100%;
   }
-
+  .officeInfo {
+    border: none;
+    padding: 2rem;
+  }
+  a.phoneIcon {
+    display: none;
+  }
+  .contactForm {
+    grid-column: 1;
+    padding: 2rem;
+    border: none;
+  }
+  .input-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .bgHeader {
+    font-size: 4rem;
+  }
+  .mainHeader {
+    font-size: 2.5rem;
+  }
+  .faqContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .faqConnect {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    max-width: 100%;
+  }
 }
-
-
 
 @media (max-width: 768px) {
-
-.servicesDetails {
-  grid-template-columns: repeat(1, 1fr);
-  margin-top: 5rem;
-}
-.faqContainer{
-  display: flex;
-  flex-direction: column;
-}
-.faqConnect{
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 100%;
+  .herogrid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
   }
-  .uiVideo{
-   width: 100%;
+
+  .btnGrp{
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .bio_stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+  .bio_stats li.stat_data p {
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .servicesDetails {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 5rem;
+  }
+  .faqContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .faqConnect {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 100%;
+  }
+  .uiVideo {
+    width: 100%;
     height: 24rem;
     max-width: 100%;
   }
 }
 @media (max-width: 500px) {
-  section, .section{
+  section,
+  .section {
     padding: 5rem 1.5rem;
   }
-  .profile{
+  .niche{
+    width: 100%;
+  }
+ 
+  .herogrid {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .heroLP{
+    padding-inline: 1.5rem;
+  }
+  .greetName {
+    font-size: 3.2rem;
+}
+  .profile {
     display: flex;
     flex-direction: column;
   }
-  .heroDetails{
+  .heroDetails {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
   }
+  .sphere, .spheretp, .bgeffect, .bgeffectbt{
+    height: 9rem;
+  }
+  .bioImg{
+    width: 90%;
+    margin: auto;
+    height: 34rem;
+  }
+  .bioImg img {
+    filter: grayscale(100%) !important;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    bottom: 0;
+}
+.smgrid{
+  grid-template-columns: repeat(1,1fr);
+}
   .profileContent {
     flex-direction: column-reverse;
-}
+  }
   .recentProjectgrid {
     padding: 1rem;
   }
   .portfolio-container {
     grid-template-columns: repeat(1, 1fr);
-  } 
-  .roleItems{
+  }
+  .roleItems {
     padding-inline: 2rem;
     gap: 1.5rem;
   }
@@ -198,17 +242,17 @@ a.phoneIcon{
   .serviceList {
     padding-top: 5rem;
     grid-template-columns: repeat(1, 1fr);
-}
-  .faqConnect{
+  }
+  .faqConnect {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     max-width: 100%;
-    }
-    .faqhd {
-      line-height: 1.2;
   }
-  .choice-accordion li label{
+  .faqhd {
+    line-height: 1.2;
+  }
+  .choice-accordion li label {
     font-size: 1.5rem;
   }
 }
