@@ -88,3 +88,15 @@ const recentProject = new Swiper(".recentProject.mySwiper", {
       },
     },
   });
+
+
+const ctaSwiper = new Swiper(".ctaSwiper.mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  speed: 1200,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  });
