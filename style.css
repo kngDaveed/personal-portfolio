@@ -17,12 +17,12 @@
 
 /* root variables */
 :root {
-  --bg-color: #1f242d;
+  --bg-color: #10101e;
   --altBg: #fff;
   --bgVariant: #f1f1f1;
-  --second-bg-color: #323946;
+  --second-bg-color: #1f242d;
+  /* --second-bg-color: #323946; */
   --text-color: #fff;
-  /* --main-color: #0ef; #06f3ff*/
   --main-color: #dbff00;
 }
 
@@ -88,8 +88,8 @@ nav {
 }
 .navbar {
   background-color: var(--second-bg-color);
-  padding: 0 3rem;
-  border-radius: 0.5rem;
+  padding: 0 5rem;
+  border-radius: 50rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -269,6 +269,7 @@ font-family: "Montserrat", Poppins;
 }
 .bio_stats {
   display: flex;
+  border-radius: 1rem;
   background-color: var(--bg-color);
   flex-direction: row;
   justify-content: space-between;
